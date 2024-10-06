@@ -18,22 +18,16 @@
         "key": "Code",
         "fields": ["govt", "Uni", "Business"]
       }
-    }
+    },
+    {"fold": ["govt", "Uni", "Business"], "as": ["category", "money"]},
+    {"filter": "datum.category == category_selector"}
   ],
   "params": [{
     "name": "category_selector",
     "bind": {
         "input": "select",
-        "options": [
-          "govt", 
-          "Uni", 
-          "Business"
-        ],
-        "labels": [
-          "Government",
-          "Universities",
-          "Businesses"
-        ],
+        "options": ["govt", "Uni", "Business"],
+        "labels": ["Government", "Universities", "Businesses"],
         "name": "Select Category"
       }
     }],
@@ -43,7 +37,7 @@
       "encoding": {
         "color": {
           "title": "Spending, in thousands of Dollars",
-          "field": "govt",
+          "field": "money", 
           "type": "quantitative",
           "scale": {"type": "linear"}
         },
