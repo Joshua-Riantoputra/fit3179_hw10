@@ -19,9 +19,9 @@
         },
     "tooltip": [
         {"field": "state", "type": "nominal", "title": "State"},
-        {"field": "govt", "type": "quantitative", "title": "Government", "format": ","},
-        {"field": "Uni", "type": "nominal", "title": "Universities", "format": ","},
-        {"field": "Business", "type": "quantitative", "title": "Businesses", "format": ","}
+        {"field": "Government", "type": "quantitative", "title": "Government", "format": ","},
+        {"field": "Universities", "type": "nominal", "title": "Universities", "format": ","},
+        {"field": "Businesses", "type": "quantitative", "title": "Businesses", "format": ","}
         ]
     }
   }
