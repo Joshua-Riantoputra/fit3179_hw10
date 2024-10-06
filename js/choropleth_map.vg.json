@@ -48,7 +48,7 @@
         "type": "text",
         "align": "right",
         "baseline": "bottom",
-        "dx": 400,
+        "dx": 450,
         "dy": 100,
         "fontSize": 11.5,
         "fontStyle": "italic",
