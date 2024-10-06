@@ -7,21 +7,66 @@
     "data": {
         "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/objective_v_category.csv"
       },
-    "mark": {"type": "circle"},
-    "encoding": {
-        "x": {
-            "field": "Government",
-            "type": "quantitative"
+    "hconcat": [
+        {
+            "mark": {"type": "circle"},
+            "encoding": {
+                "x": {
+                    "field": "Government",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Businesses",
+                    "type": "quantitative"
+                },
+                "size": {"value": 100},
+            "tooltip": [
+                {"field": "state", "type": "nominal", "title": "State"},
+                {"field": "Government", "type": "quantitative", "title": "Government", "format": ","},
+                {"field": "Universities", "type": "quantitative", "title": "Universities", "format": ","},
+                {"field": "Businesses", "type": "quantitative", "title": "Businesses", "format": ","}
+                ]
+            }
         },
-        "y": {
-            "field": "Universities",
-            "type": "quantitative"
+        {
+            "mark": {"type": "circle"},
+            "encoding": {
+                "x": {
+                    "field": "Businesses",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Universities",
+                    "type": "quantitative"
+                },
+                "size": {"value": 100},
+            "tooltip": [
+                {"field": "state", "type": "nominal", "title": "State"},
+                {"field": "Government", "type": "quantitative", "title": "Government", "format": ","},
+                {"field": "Universities", "type": "quantitative", "title": "Universities", "format": ","},
+                {"field": "Businesses", "type": "quantitative", "title": "Businesses", "format": ","}
+                ]
+            }
         },
-    "tooltip": [
-        {"field": "state", "type": "nominal", "title": "State"},
-        {"field": "Government", "type": "quantitative", "title": "Government", "format": ","},
-        {"field": "Universities", "type": "nominal", "title": "Universities", "format": ","},
-        {"field": "Businesses", "type": "quantitative", "title": "Businesses", "format": ","}
-        ]
-    }
+        {
+            "mark": {"type": "circle"},
+            "encoding": {
+                "x": {
+                    "field": "Universities",
+                    "type": "quantitative"
+                },
+                "y": {
+                    "field": "Government",
+                    "type": "quantitative"
+                },
+                "size": {"value": 100},
+            "tooltip": [
+                {"field": "state", "type": "nominal", "title": "State"},
+                {"field": "Government", "type": "quantitative", "title": "Government", "format": ","},
+                {"field": "Universities", "type": "quantitative", "title": "Universities", "format": ","},
+                {"field": "Businesses", "type": "quantitative", "title": "Businesses", "format": ","}
+                ]
+            }
+        }
+    ]
   }
