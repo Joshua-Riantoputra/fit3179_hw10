@@ -15,11 +15,22 @@
     vegaEmbed('#choropleth_map', spec2).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error);
+
+    var spec3 = "js/bubble_chart.vg.json";
+    vegaEmbed('#bubble_chart', spec3).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error);
   </script>
 </head>
 <body>
 
 <div id="choropleth_map"></div>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<div id="bubble_chart"></div>
 
 
 

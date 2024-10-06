@@ -26,8 +26,7 @@
     "name": "category_selector",
     "bind": {
         "input": "select",
-        "options": ["Business", "govt", "Uni"],
-        "labels": ["Businesses", "Government", "Universities"],
+        "options": ["Businesses", "Government", "Universities"],
         "name": "Select Category"
       }
     }],

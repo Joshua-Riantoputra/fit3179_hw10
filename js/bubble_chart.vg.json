@@ -1,0 +1,27 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Correlation Between Categories",
+    "width": 400,
+    "height": 400,
+    "projection": {"type": "mercator"},
+    "data": {
+        "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/objective_v_category.csv"
+      },
+    "mark": {"type": "circle"},
+    "encoding": {
+        "x": {
+            "field": "Government",
+            "type": "quantitative"
+        },
+        "y": {
+            "field": "Universities",
+            "type": "quantitative"
+        },
+    "tooltip": [
+        {"field": "state", "type": "nominal", "title": "State"},
+        {"field": "govt", "type": "quantitative", "title": "Government", "format": ","},
+        {"field": "Uni", "type": "nominal", "title": "Universities", "format": ","},
+        {"field": "Business", "type": "quantitative", "title": "Businesses", "format": ","}
+        ]
+    }
+  }
