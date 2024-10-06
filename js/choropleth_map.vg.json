@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "Higher education funds spend on Animal Production",
+  "title": "Funds Spend on Research and Development in Australia",
   "width": 800,
   "height": 400,
   "projection": {"type": "mercator"},
@@ -13,24 +13,24 @@
       "lookup": "properties.STE_CODE21",
       "from": {
         "data": {
-          "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/state_v_socio_HE.csv"
+          "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/objective_v_category.csv"
         },
-        "key": "code",
-        "fields": ["Animal Production and Animal Primary Products"]
+        "key": "Code",
+        "fields": ["govt"]
       }
     }
   ],
   "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
-      "title": "Legend",
-      "field": "Animal Production and Animal Primary Products",
+      "title": "Spending, in thousands of Dollars",
+      "field": "govt",
       "type": "quantitative",
-      "scale": {"type": "log"}
+      "scale": {"type": "linear"}
     },
     "tooltip": [
       {"field": "properties.STE_NAME21", "type": "nominal", "title": "Country"},
-      {"field": "Animal Production and Animal Primary Products", "type": "quantitative"}
+      {"field": "govt", "type": "quantitative"}
     ]
   }
 }
