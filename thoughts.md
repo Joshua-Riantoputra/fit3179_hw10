@@ -6,6 +6,8 @@ goals i need to do
 actions
 2 hrs
 - get chloro working for category data
+  - get the data in the right format
+  - change the details
 - make text annotations
 - make tooltips (just put all info there)
 4 hrs
