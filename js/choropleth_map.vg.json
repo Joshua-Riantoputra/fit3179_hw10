@@ -20,14 +20,14 @@
       }
     },
     {"fold": ["govt", "Uni", "Business"], "as": ["category", "money"]},
-    {"filter": "datum.category == category_selector"}
+    {"filter": "category_selector == null || datum.category == category_selector"}
   ],
   "params": [{
     "name": "category_selector",
     "bind": {
         "input": "select",
-        "options": ["govt", "Uni", "Business"],
-        "labels": ["Government", "Universities", "Businesses"],
+        "options": ["Business", "govt", "Uni"],
+        "labels": ["Businesses", "Government", "Universities"],
         "name": "Select Category"
       }
     }],
@@ -36,7 +36,7 @@
       "mark": {"type": "geoshape"},
       "encoding": {
         "color": {
-          "title": "Spending, in thousands of Dollars",
+          "title": "Spending (thousands of Dollars)",
           "field": "money", 
           "type": "quantitative",
           "scale": {"type": "linear"}
