@@ -5,7 +5,7 @@
   "height": 400,
   "projection": {"type": "mercator"},
   "data": {
-    "url": "../data/STE_2021_AUST_GDA2020.topojson",
+    "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/STE_2021_AUST_GDA2020.topojson",
     "format": {"type": "topojson", "feature": "aus_state_map"}
   },
   "transform": [
@@ -13,7 +13,7 @@
       "lookup": "properties.STE_CODE21",
       "from": {
         "data": {
-          "url": "../data/objective_v_category.csv"
+          "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/objective_v_category.csv"
         },
         "key": "Code",
         "fields": ["govt", "Uni", "Business"]
@@ -21,7 +21,7 @@
     }
   ],
   "params": [{
-    "name": "this is a thing",
+    "name": "category_selector",
     "bind": {
         "input": "select",
         "options": [
@@ -34,7 +34,7 @@
           "Universities",
           "Businesses"
         ],
-        "name": "select category"
+        "name": "Select Category"
       }
     }],
   "layer": [
