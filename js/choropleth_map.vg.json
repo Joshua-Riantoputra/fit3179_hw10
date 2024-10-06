@@ -16,7 +16,7 @@
           "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/objective_v_category.csv"
         },
         "key": "Code",
-        "fields": ["govt"]
+        "fields": ["govt", "Uni", "Business"]
       }
     }
   ],
@@ -29,10 +29,10 @@
       "scale": {"type": "linear"}
     },
     "tooltip": [
-      {"field": "properties.STE_NAME21", "type": "nominal", "title": "Country"},
-      {"field": "govt", "type": "quantitative"},
-      {"field": "Uni", "type": "quantitative"},
-      {"field": "Businesses", "type": "quantitative"}
+      {"field": "properties.STE_NAME21", "type": "nominal", "title": "State"},
+      {"field": "govt", "type": "quantitative", "title": "Government", "format": ","},
+      {"field": "Uni", "type": "nominal", "title": "Universities", "format": ","},
+      {"field": "Business", "type": "quantitative", "title": "Businesses", "format": ","}
     ]
   }
 }
