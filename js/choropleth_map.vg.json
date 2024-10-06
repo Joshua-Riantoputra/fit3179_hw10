@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "title": "COVID-19 Active Cases (10 Oct 2020)",
+  "title": "Higher education funds spend on Animal Production",
   "width": 800,
   "height": 400,
   "projection": {"type": "mercator"},
@@ -18,12 +18,12 @@
         "key": "code",
         "fields": ["Animal Production and Animal Primary Products"]
       }
-    },
-    {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
+    }
   ],
   "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
+      "title": "Legend",
       "field": "Animal Production and Animal Primary Products",
       "type": "quantitative",
       "scale": {"type": "log"}
