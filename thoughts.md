@@ -12,3 +12,6 @@ actions
 - make tooltips (just put all info there) (sure I guess)
 4 hrs
 - make drop down selector
+3 hours
+- other visualisation
+- probably a bubble chart of some kind
