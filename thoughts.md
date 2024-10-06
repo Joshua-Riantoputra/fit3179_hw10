@@ -8,10 +8,10 @@ actions
 - get chloro working for category data
   - get the data in the right format yes 
   - change the details yes
-- make text annotations  (none)
+- make text annotations  (some)
 - make tooltips (just put all info there) (sure I guess)
 4 hrs
-- make drop down selector
+- make drop down selector (ye)
 3 hours
 - other visualisation
 - probably a bubble chart of some kind
