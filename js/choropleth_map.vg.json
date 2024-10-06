@@ -29,8 +29,8 @@
       "scale": {"type": "log"}
     },
     "tooltip": [
-      {"field": "properties.STATE", "type": "nominal", "title": "Country"},
-      {"field": "Total", "type": "quantitative"}
+      {"field": "properties.STE_NAME21", "type": "nominal", "title": "Country"},
+      {"field": "Animal Production and Animal Primary Products", "type": "quantitative"}
     ]
   }
 }
