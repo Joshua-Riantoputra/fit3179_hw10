@@ -16,10 +16,10 @@
           "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/objective_v_category.csv"
         },
         "key": "Code",
-        "fields": ["govt", "Uni", "Business"]
+        "fields": ["Businesses", "Government", "Universities"]
       }
     },
-    {"fold": ["govt", "Uni", "Business"], "as": ["category", "money"]},
+    {"fold": ["Businesses", "Government", "Universities"], "as": ["category", "money"]},
     {"filter": "category_selector == null || datum.category == category_selector"}
   ],
   "params": [{
@@ -27,6 +27,7 @@
     "bind": {
         "input": "select",
         "options": ["Businesses", "Government", "Universities"],
+        "labels": ["Businesses", "Government", "Universities"],
         "name": "Select Category"
       }
     }],
