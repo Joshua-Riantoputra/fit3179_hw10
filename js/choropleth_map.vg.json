@@ -20,19 +20,64 @@
       }
     }
   ],
-  "mark": {"type": "geoshape"},
-  "encoding": {
-    "color": {
-      "title": "Spending, in thousands of Dollars",
-      "field": "govt",
-      "type": "quantitative",
-      "scale": {"type": "linear"}
+  "layer": [
+    {
+      "mark": {"type": "geoshape"},
+      "encoding": {
+        "color": {
+          "title": "Spending, in thousands of Dollars",
+          "field": "govt",
+          "type": "quantitative",
+          "scale": {"type": "linear"}
+        },
+      "tooltip": [
+        {"field": "properties.STE_NAME21", "type": "nominal", "title": "State"},
+        {"field": "govt", "type": "quantitative", "title": "Government", "format": ","},
+        {"field": "Uni", "type": "nominal", "title": "Universities", "format": ","},
+        {"field": "Business", "type": "quantitative", "title": "Businesses", "format": ","}
+        ]
+      }
     },
-    "tooltip": [
-      {"field": "properties.STE_NAME21", "type": "nominal", "title": "State"},
-      {"field": "govt", "type": "quantitative", "title": "Government", "format": ","},
-      {"field": "Uni", "type": "nominal", "title": "Universities", "format": ","},
-      {"field": "Business", "type": "quantitative", "title": "Businesses", "format": ","}
-    ]
-  }
+    {
+      "data": {
+        "values": [{
+          "label": "The Victorian government spends slightly \nmore than New South Wales on Research,\n whereas the total business expenditure \non research in New South Wales vastly \noutweighs Victoria"
+        }]
+      },
+      "mark": {
+        "type": "text",
+        "align": "right",
+        "baseline": "bottom",
+        "dx": 400,
+        "dy": 100,
+        "fontSize": 11.5,
+        "fontStyle": "italic",
+        "lineBreak": "\n"
+        },
+      "encoding": {
+        "text": {"field": "label", "type": "nominal"}
+      }
+    },
+    {
+      "data": {
+        "values": [{
+          "label": "The Northern Territory spends \nthe least amount of funds \nin all three categories"
+        }]
+      },
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "baseline": "bottom",
+        "dx": -300,
+        "dy": -140,
+        "fontSize": 11.5,
+        "fontStyle": "italic",
+        "lineBreak": "\n"
+        },
+      "encoding": {
+        "text": {"field": "label", "type": "nominal"}
+      }
+    }
+]
+  
 }

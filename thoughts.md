@@ -8,7 +8,7 @@ actions
 - get chloro working for category data
   - get the data in the right format yes 
   - change the details yes
-- make text annotations half
-- make tooltips (just put all info there)
+- make text annotations  (none)
+- make tooltips (just put all info there) (sure I guess)
 4 hrs
 - make drop down selector
