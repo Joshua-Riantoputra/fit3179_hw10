@@ -6,9 +6,9 @@ goals i need to do
 actions
 2 hrs
 - get chloro working for category data
-  - get the data in the right format
-  - change the details
-- make text annotations
+  - get the data in the right format yes 
+  - change the details yes
+- make text annotations half
 - make tooltips (just put all info there)
 4 hrs
 - make drop down selector
