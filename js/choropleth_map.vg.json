@@ -24,9 +24,9 @@
   "mark": {"type": "geoshape"},
   "encoding": {
     "color": {
-      "field": "Total",
+      "field": "Animal Production and Animal Primary Products",
       "type": "quantitative",
-      "scale": {"type": "linear"}
+      "scale": {"type": "log"}
     },
     "tooltip": [
       {"field": "properties.STATE", "type": "nominal", "title": "Country"},
