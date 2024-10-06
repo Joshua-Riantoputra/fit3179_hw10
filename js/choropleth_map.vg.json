@@ -15,8 +15,8 @@
         "data": {
           "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/state_v_socio_HE.csv"
         },
-        "key": "State Code",
-        "fields": ["Total"]
+        "key": "code",
+        "fields": ["Animal Production and Animal Primary Products"]
       }
     },
     {"calculate": "datum.Active + 0.1", "as": "Active Cases"}
