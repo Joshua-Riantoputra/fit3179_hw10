@@ -5,7 +5,7 @@
   "height": 400,
   "projection": {"type": "mercator"},
   "data": {
-    "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/STE_2021_AUST_GDA2020.topojson",
+    "url": "https://raw.githubusercontent.com/Joshua-Riantoputra/fit3179_hw10/refs/heads/main/data/STE_2021_AUST_GDA2020.topojson",
     "format": {"type": "topojson", "feature": "aus_state_map"}
   },
   "transform": [
@@ -26,7 +26,7 @@
       "title": "Spending, in thousands of Dollars",
       "field": "govt",
       "type": "quantitative",
-      "scale": {"type": "linear"}
+      "scale": {"type": "linear "}
     },
     "tooltip": [
       {"field": "properties.STE_NAME21", "type": "nominal", "title": "Country"},
